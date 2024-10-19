@@ -1,0 +1,135 @@
+.first-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    height: 80vh;
+    padding: 0 80px;
+}
+
+body {
+    background-color: #161D26;
+}
+
+.first-image {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.first-text {
+    color: #ffffff;
+    font-weight: bold;
+    width: 820px;
+    height: max-content;
+    margin: auto;
+    font-size: 72px;
+}
+
+.first-button {
+    background-color: blue;
+    border-radius: 35px;
+    height: 50px;
+    color: #ffffff;
+    width: 190px;
+    font-size: 16px;
+}
+
+.first-button-container {
+    display: grid; /*обхясление грида*/
+    grid-template-columns: max-content max-content; /*создание колонки*/
+    gap: 20px; /*отступы между колонками*/
+    grid-template-rows: max-content; /*создание строк*/
+}
+
+.button-right-text {
+    font-size: 16px;
+    width: 270px;
+    margin: auto;
+}
+
+.second-container {
+    height: 100vh;
+    background-image: url("4773c014c4fb5be905ed9cf57331b94a.jpg");
+    display: flex;
+}
+
+.second-text {
+    font-family: "Exo 2"; /*изменение шрифта*/
+    padding-top: 15%;
+    color: #003eff;
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase; /*только большие буквы*/
+    text-shadow: 1px 1px 2px #161D26;
+}
+
+.third-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 80px 28px;
+    grid-template-rows: auto auto;
+    padding: 80px;
+}
+
+.third-text {
+    grid-area: 1 / 1 / span 1 / span 4;
+    height: max-content;
+    font-size: 48px;
+    font-weight: 600;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.third-card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    width: 250px;
+    height: 340px;
+    box-shadow: 4px 4px 8px #d50e0e;
+    border-radius: 25px;
+    gap: 20px;
+    background-color: white;
+}
+
+.third-card:hover { /*псевдокласс на наведение мыши */
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.image-card {
+    border-radius: 5px;
+    background-color: #003eff;
+    height: 75px;
+    width: 75px;
+    margin: auto;
+    object-fit: contain;
+    padding: 8px;
+}
+
+/*.image-card::after {
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 2px;
+    margin-top: 120px;
+    border: solid 2px #161D26;
+}*/
+
+.text-card {
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+}
+
+
+p {
+    color: white;
+    margin: 0;
+}
