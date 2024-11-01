@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 32px 16px;
+    background-image: url("snowy-mountain-peak-starry-galaxy-majesty-generative-ai.jpg");
 }
 
 .grid-image-area {
@@ -66,4 +67,21 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 32px 16px;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.button {
+    padding: 16px;
+    font-size: 32px;
+    height: auto;
+    width: max-content;
+    background-color: aquamarine;
+    color: white;
+    border: solid 2px #d50e0e;
+    border-radius: 16px;
+    box-shadow: 4px 4px 4px aqua;
+}
+
+.button:hover {
+    background-color: #ea2222;
+    color: black;
 }
