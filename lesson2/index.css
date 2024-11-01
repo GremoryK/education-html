@@ -1,3 +1,7 @@
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: "Exo 2"; /*изменение шрифта*/
+}
+
 .first-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -55,7 +59,6 @@ body {
 }
 
 .second-text {
-    font-family: "Exo 2"; /*изменение шрифта*/
     padding-top: 15%;
     color: #003eff;
     height: 100%;
