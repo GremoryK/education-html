@@ -21,6 +21,16 @@ body {
     grid-area: 1 / 2 / span 2 / span 1;
 }
 
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: black;
+}
+
 .first-text {
     color: #ffffff;
     font-weight: bold;
@@ -53,9 +63,11 @@ body {
 }
 
 .second-container {
+    position: relative;
     height: 100vh;
     background-image: url("4773c014c4fb5be905ed9cf57331b94a.jpg");
     display: flex;
+    background-size: cover;
 }
 
 .second-text {
@@ -135,4 +147,12 @@ body {
 p {
     color: white;
     margin: 0;
+}
+
+.my-input {
+    height: 32px;
+    width: auto;
+    border-radius: 10px;
+    border: solid 0px;
+    opacity: 0.8;
 }

@@ -1,0 +1,133 @@
+.custom-select {
+    position: relative;
+    font: 16px/20px "STIX Two Text";
+    border-radius: 4px;
+    border: #161D26 1px solid;
+    width: 200px;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.custom-select:hover {
+    box-shadow: 0 0 0 4px rgba(40, 183, 195, 0.48);
+}
+
+.select-selected {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    pointer-events: none;
+    background-repeat: no-repeat;
+}
+
+.arrow-down {
+    background-image: url("down-arrow-image.svg");
+}
+
+.arrow-up {
+    background-image: url("up-arrow-image.svg");
+}
+
+.hidden {
+    display: none;
+}
+
+.select-items div, .select-selected {
+    color: black;
+    padding: 8px 16px;
+    border: solid 1px transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items::-webkit-scrollbar {
+    width: 4px;
+    background: #f0f0f0;
+}
+
+.select-items::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 0 4px 4px 0;
+}
+
+.select-items::-webkit-scrollbar-button {
+    display: none;
+}
+
+.select-items::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #dbdbdb;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: #161D26 1px solid;
+    top: 110%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-height: 200px;
+    overflow-y: scroll;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, .8), 0 9px 28px 8px rgba(0, 0, 0, .5);
+    font-size: 13px;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items .same-as-selected {
+    background-color: rgba(40, 183, 195, .48);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(120, 143, 165, .15);
+    position: relative;
+}
+
+.select-items div:hover::after {
+    content: ""; /* Пустое содержание */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%;
+    right: 10px; /* Смещение от правого края */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    width: 6px; /* Ширина SVG */
+    height: 6px; /* Высота SVG */
+    background-image: url('31181.svg'); /* Путь к вашему SVG */
+    background-repeat: no-repeat; /* Не повторять SVG */
+    background-size: contain; /* Подгонка SVG под размер */
+}
+
+.select-items .same-as-selected::after {
+    content: ""; /* Пустое содержание */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%;
+    right: 10px; /* Смещение от правого края */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    width: 6px; /* Ширина SVG */
+    height: 6px; /* Высота SVG */
+    background-image: url('31182.svg'); /* Путь к вашему SVG */
+    background-repeat: no-repeat; /* Не повторять SVG */
+    background-size: contain; /* Подгонка SVG под размер */
+}
+
+.grid-container5 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 120px;
+}
